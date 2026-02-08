@@ -51,7 +51,7 @@ laburen-mcp-server/
 │   └── products.xlsx         # Dataset de productos (input); colocar aquí el archivo (ignorado por .gitignore)
 ├── docs/
 │   └── flow_diagram.jpg      # Diagrama de flujo del agente
-├── wrangler.toml
+├── wrangler.jsonc
 └── README.md
 ```
 

@@ -19,7 +19,22 @@
 			"database_name": "laburen_db",
 			"database_id": "329b7fee-a29d-46b6-b75e-f378dddddcd9"
 		}
-	]
+	],
+	"durable_objects": {
+		"bindings": [
+		  {
+			"name": "MCP_SESSION",
+			"class_name": "McpSessionDO"
+		  }
+		]
+	  },
+	
+	  "migrations": [
+		{
+		  "tag": "do-v1",
+		  "new_sqlite_classes": ["McpSessionDO"]
+		}
+	  ]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
