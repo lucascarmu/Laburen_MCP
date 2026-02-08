@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chatwoot Test</title>
+  </head>
+  <body>
+    <h1>Chatwoot Test</h1>
+
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://chatwootchallenge.laburen.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: '78axabNrJxe4KeRFnGbP3LvZ',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+  </body>
+</html>
